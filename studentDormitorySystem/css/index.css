@@ -1,0 +1,116 @@
+
+header{
+    width: 100%;
+    height: 80px;
+    background-color:#1abc9c;
+    position: relative;
+    min-width: 1300px;
+}
+header h1{
+    margin-left: 50px;
+    width: 400px;
+    height: 80px;
+    font-size:40px;
+    color: white;
+    font-family: 微软雅黑;
+    font-weight: bold;
+    letter-spacing: 5px;
+    line-height: 80px;
+}
+header div{
+    position: absolute;
+    top: 0px;
+    right: 0;
+    width: 200px;
+    height: 60px;
+    margin-top: 25px;
+}
+button {
+    background-color: #3498db;
+    border: none;
+    border-radius: 15px;
+    width: 80px;
+    height: 30px;
+    color: white;
+}
+article{
+    width:1000px;
+    height: 600px;
+    margin: 0px auto;
+    padding-top: 100px;
+}
+article .left-container{
+    display: inline-block;
+    width: 520px;
+    height: 280px;
+}
+article .left-container .text .top{
+    margin-top: 10px;
+    font-size: 20px;
+}
+article .left-container .text ul li{
+    text-decoration: none;
+    margin: 7px 0;
+}
+
+article .right-container{
+    display: inline-block;
+    margin-left: 100px;
+    vertical-align: top;
+    padding-top: 20px;
+    height: 280px;
+    width: 280px;
+    border:1px solid #ccc;
+    background-color: floralwhite;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    box-sizing: border-box;
+}
+
+article .right-container h1{
+    font-size: 30px;
+    height: 50px;
+    width: 100%;
+    line-height: 50px;
+    text-align: center;
+    font-family: 微软雅黑;
+    font-weight: bold;
+}
+article .right-container  label{
+    margin-left: 10px;
+}
+article .right-container #uaccount,#upwd{
+    width: 165px;
+    margin-bottom: 10px;
+    margin-left: 10px;
+    text-indent: 2px;
+}
+article .right-container input[type="submit"]{
+    text-align: center;
+    width: 150px;
+    height: 25px;
+    margin-left: 55px;
+    border: none;
+    -webkit-border-radius: 12.5px;
+    -moz-border-radius: 12.5px;
+    border-radius: 12.5px;
+    background-color: #0abde3;
+}
+
+article .right-container .other-func{
+    width: 200px;
+    margin: 0px auto;
+    text-align: center;
+}
+article .right-container .other-func button{
+    text-decoration: none;
+    color:black;
+    border: 1px solid #ccc;
+    background-color: #c8d6e5;
+    margin-top: 10px;
+    margin-right: 10px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 10px;
+}

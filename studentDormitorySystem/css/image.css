@@ -1,0 +1,66 @@
+.container{
+	position: relative;
+	height: 280px;
+	width: 520px;
+	overflow: hidden;
+}
+.container .images{
+	height: 280px;
+}
+.container .images img{
+	width: 520px;
+	height: 280px;
+	display: block;
+}
+.container .images a{
+	float: left;
+}
+.container .dots{
+	height: 13px;
+	background-color: rgba(255,255,255,.3);
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 10px;
+	margin: 0 auto;
+	border-radius: 10px;
+	box-sizing: border-box;
+}
+.container .dots span{
+	width: 8px;
+	height: 8px;
+	background-color: white;
+	margin: 3px;
+	float: left;
+	border-radius:50%;
+	cursor: pointer;
+}
+
+.container .dots span.active{
+	background-color: #f40;
+}
+.container .arrow .item{
+	position: absolute;
+	top: 125px;
+	width: 20px;
+	height: 30px;
+	background-color: rgba(0,0,0,.3);
+	line-height: 30px;
+	color: rgba(255,255,255,.5);
+	box-sizing:border-box;
+	cursor: pointer;
+}
+.container .arrow .item:hover{
+	color: rgba(255,255,255,1);
+	
+}
+.container .arrow .left{
+	padding-left: 2px;
+	left: 0;
+	border-radius: 0 17px 17px 0;
+}
+.container .arrow .right{
+	padding-left: 5px;
+	right: 0;
+	border-radius: 17px 0 0 17px;
+}
