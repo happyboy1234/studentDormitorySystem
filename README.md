@@ -12,5 +12,6 @@
   <li><input type="checkbox" value="签到" checked="checked">签到</input></li>
   <li><input type="checkbox" value="显示舍友签到信息" checked="checked">显示舍友签到信息</input></li>
   <li><input type="checkbox" value="显示宿舍趣事" checked="checked">显示宿舍趣事</input></li>
+  <li>......</li>
 </ul>
 
