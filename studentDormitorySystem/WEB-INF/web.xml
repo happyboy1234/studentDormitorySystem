@@ -49,4 +49,34 @@
         <servlet-name>messageServlet</servlet-name>
         <url-pattern>/messageServlet</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>findIsCancelServlet</servlet-name>
+        <servlet-class>com.sofency.servlet.findIsCancelServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>findIsCancelServlet</servlet-name>
+        <url-pattern>/findIsCancelServlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>insertDianZanServlet</servlet-name>
+        <servlet-class>com.sofency.servlet.insertDianZanServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>insertDianZanServlet</servlet-name>
+        <url-pattern>/insertDianZanServlet</url-pattern>
+    </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>deleteDianZanServlet</servlet-name>
+        <servlet-class>com.sofency.servlet.deleteDianZanServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>deleteDianZanServlet</servlet-name>
+        <url-pattern>/deleteDianZanServlet</url-pattern>
+    </servlet-mapping>
+
 </web-app>
