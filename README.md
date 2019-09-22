@@ -8,6 +8,7 @@
   <li><input type="checkbox" value="修改资料" checked="checked">修改资料</input></li>
   <li><input type="checkbox" value="发趣事" checked="checked">发趣事</input></li>
   <li><input type="checkbox" value="写评论" checked="checked">写评论--针对单个用户</input></li>
+  <li><input type="checkbox" value="评论点赞" checked="checked">评论点赞</input></li>
   <li><input type="checkbox" value="显示舍友签到信息" checked="checked">显示舍友签到信息</input></li>
   <li><input type="checkbox" value="签到" checked="checked">签到</input></li>
   <li><input type="checkbox" value="显示舍友签到信息" checked="checked">显示舍友签到信息</input></li>
