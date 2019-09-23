@@ -162,7 +162,21 @@ background-color: rgba(255,255,255,1);border: 1px solid #ccc">
                                 <%=msg.getMessageContext()%>
                             </div>
                             <div class="container-comment" >
-                                <img  class="noclick" src="image/noclick.png" alt="点赞" onclick="clickzan(this)">&nbsp;&nbsp;<img class="comment" src="image/comment.png" alt="评论" onclick="">
+                                <%
+                                    //向数据库中查找是否点赞
+                                    Object[] obj ={uaccount,msg.getMessagetime(),msg.getUaccount()};
+                                    String test = apacheDao.findIsCancel(obj);
+                                    if(test.equals("ok")){
+                                %>
+                                <img  class="noclick" src="image/click.png" alt="点赞" onclick="clickzan(this)">
+                                <%
+                                    }else{
+                                %>
+                                <img  class="noclick" src="image/noclick.png" alt="点赞" onclick="clickzan(this)">
+                                <%
+                                    }
+                                %>
+                                &nbsp;&nbsp;<img class="comment" src="image/comment.png" alt="评论" onclick="">
                             </div>
                         </div>
                     </li>
@@ -232,7 +246,7 @@ background-color: rgba(255,255,255,1);border: 1px solid #ccc">
                                     "account":uaccount,
                                     "Time":message_time,
                                     "dianzan":dianzan,
-                                    "isDianZan":1
+                                    "isDianZan":"1"
                                 },
                                 success:function(re){
                                     if(re==1) {
