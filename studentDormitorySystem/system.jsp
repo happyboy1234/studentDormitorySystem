@@ -27,7 +27,7 @@
             Object[] usermsg=  apacheDao.searchusermsg(object);//查询学生信息
         %>
         <img src="<%=imgPath%>" class="userimg" alt="userimg" title="瞅我干啥">
-        <a href="#">消息</a>
+        <a href="showmsg.jsp?uaccount=<%=uaccount%>">消息</a>
         <a href="#" onclick="showWin()">我的资料</a>
         <a href="sendmsg.jsp?uaccount=<%=uaccount%>&uname=<%=usermsg[1]%>">发趣事</a>
         <a href="#" onclick="sign()">签到</a>

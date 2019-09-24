@@ -136,7 +136,6 @@ background-color: rgba(255,255,255,1);border: 1px solid #ccc">
                         }
                     })
                 }
-
                 function clearmsg(){
                     $("#message").val('');
                 }
@@ -203,7 +202,6 @@ background-color: rgba(255,255,255,1);border: 1px solid #ccc">
                 var uaccount="<%=uaccount%>";
                 //当前点赞的时间
                 var dianzan = "<%=dianzan%>";
-
                 //查询作者文章是否被当前用户所点过赞
                 $.ajax({
                     url:"findIsCancelServlet",
@@ -215,10 +213,9 @@ background-color: rgba(255,255,255,1);border: 1px solid #ccc">
                         "messageTime":message_time
                     },
                     success:function(data){
-                        alert(data);
                         if(data=="ok"){//点赞了则清除点赞记录
-                            $(js).attr("src","image/noclick.png");
                             //向数据库中进行删除操作
+                           $(js).attr("src","image/noclick.png");
                            $.ajax({
                                async:false,
                                url:"deleteDianZanServlet",
@@ -229,13 +226,17 @@ background-color: rgba(255,255,255,1);border: 1px solid #ccc">
                                    "messageTime":message_time
                                },
                                success:function(re){
-                                   if(re==1)  alert("取消点赞");
-                                   else alert("取消失败");
+                                   if(re==1)  {
+                                       console.log("取消点赞");
+                                   }
+                                   else {
+                                       console.log("取消失败");
+                                   }
                                }
                            })
 
                         }else if(data=="false") {//没有点赞插入记录
-
+                            $(js).attr("src","image/click.png");
                             //向数据库中进行添加操作
                             $.ajax({
                                 async:false,
@@ -250,10 +251,9 @@ background-color: rgba(255,255,255,1);border: 1px solid #ccc">
                                 },
                                 success:function(re){
                                     if(re==1) {
-                                        $(js).attr("src","image/click.png");
-                                        alert("点赞成功");
+                                        console.log("点赞成功");
                                     } else {
-                                        alert("点赞失败");
+                                        console.log("点赞失败");
                                     }
                                 }
                             })
